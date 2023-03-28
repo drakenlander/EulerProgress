@@ -1,5 +1,18 @@
+'''
+
+Smallest Multiple
+Problem 5
+
+2520 is the smallest number that can be divided by each of the
+numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all
+of the numbers from 1 to 20?
+
+'''
+
 def isDivisible(n):
-	divisors = [18, 16, 14]; # other divisibilities are given by prior calculation
+	divisors = [18, 16, 14]; # other divisibilities are given
 
 	for i in divisors:
 		if n % i != 0:
@@ -16,4 +29,5 @@ while True:
 	if isDivisible(n):
 		exit();
 	else:
-		n = n + f; # first multiple of f to be divisible by other divisors
+		n = n + f; # multiple of f to be divisible by other divisors
+		
