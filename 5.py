@@ -30,4 +30,3 @@ while True:
 		exit();
 	else:
 		n = n + f; # multiple of f to be divisible by other divisors
-		

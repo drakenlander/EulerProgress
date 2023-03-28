@@ -63,4 +63,3 @@ while True:
 		exit();
 
 	c = c + 1;
-	

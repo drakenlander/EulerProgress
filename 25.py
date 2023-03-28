@@ -38,4 +38,3 @@ while len(str(fibB)) < 1000:
 	
 	print(index);
 	print(len(str(fibB)));
-	
