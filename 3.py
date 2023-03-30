@@ -24,6 +24,7 @@ while n != i:
 		if n % i == 0:
 			print(i, n / i);
 			n = n / i; # lower limit
+			
 	i = i + 1;
 	
 print(i, n);

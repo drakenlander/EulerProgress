@@ -21,6 +21,7 @@ def sieveOfErathostenes(index, bound):
 		if primes[p] == True: # if element is prime...
 			for i in range(p ** 2, bound + 1, p): # access multiples
 				primes[i] = False; # and remove them
+				
 		p = p + 1;
 
 	for i in range(2, len(primes)):
