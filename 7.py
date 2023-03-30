@@ -6,40 +6,34 @@ Problem 7
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we
 can see that the 6th prime is 13.
 
-What is the 10 001st prime number?
+What is the 10001st prime number?
 
 '''
 
 from math import log;
 
-def isPrime(n):
-	for i in range(2, n): # possible divisors
-		if n % i == 0: # divisible; not prime
-			return False;
-	return True;
+def sieveOfErathostenes(index, bound):
+	primes = [True for i in range(bound + 1)];
+	p = 2;
+	c = 0; # count every prime
+
+	while p ** 2 <= bound: # repeat until sqrt of bound
+		if primes[p] == True: # if element is prime...
+			for i in range(p ** 2, bound + 1, p): # access multiples
+				primes[i] = False; # and remove them
+		p = p + 1;
+
+	for i in range(2, len(primes)):
+		if primes[i] == True:
+			c = c + 1;
+
+		if c == index:
+			return(i);
 
 
-n = 1; # first prime is 2; purpose: to add 2 and skip even numbers
-w = 10001;
-c = 0;
+index = 10001;
+bound = int(index * (log(index) + log(log(index))));
+res = sieveOfErathostenes(index, bound);
 
-while c != w:
-	if isPrime(n):
-		print(n);
-		c = c + 1;
-
-	n = n + 2;
-
-print(c);
-
-'''
-
-# TODOTODOTODOTODOTODOTODOTODOTODOTODO
-
-lowerBound = w * log(w);
-upperBound = 1.5 * (w * log(w));
-print(lowerBound, upperBound);
-
-# TODOTODOTODOTODOTODOTODOTODOTODOTODO
-
-'''
+print(bound);
+print(res);
