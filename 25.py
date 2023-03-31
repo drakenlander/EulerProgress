@@ -4,8 +4,11 @@
 Problem 25
 
 The Fibonacci sequence is defined by the recurrence relation:
+
 F_n = F_n − 1 + F_n − 2, where F_1 = 1 and F_2 = 1.
+
 Hence the first 12 terms will be:
+
 F_1 = 1
 F_2 = 1
 F_3 = 2

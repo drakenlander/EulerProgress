@@ -3,14 +3,14 @@ Largest Product in a Grid
 Problem 11
 
 In the 20×20 grid below, four numbers along a diagonal line have been
-marked in red.
+marked in red:
 
-26, 63, 78, 14.
+26, 63, 78, 14
 
 The product of these numbers is 26 × 63 × 78 × 14 = 1788696.
 
 What is the greatest product of four adjacent numbers in the same
-direction (up, down, left, right, or diagonally) in the 20×20 grid?
+direction (up, down, left, right, or diagonally) in the 20 × 20 grid?
 
 '''
 
