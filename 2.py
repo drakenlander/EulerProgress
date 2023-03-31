@@ -13,7 +13,7 @@ not exceed four million, find the sum of the even-valued terms.
 
 '''
 
-sum = 2; # first even fibonacci number
+s = 2; # first even fibonacci number
 fibA = 1;
 fibB = 2;
 
@@ -23,7 +23,7 @@ while (fibB < 4000000):
 	fibA = fibTmp;
 
 	if fibB % 2 == 0 and fibB < 4000000:
-		print(sum);
-		sum = sum + fibB;
+		print(s);
+		s = s + fibB;
 		
-print(sum);
+print(s);
