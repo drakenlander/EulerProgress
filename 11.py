@@ -2,7 +2,7 @@
 Largest Product in a Grid
 Problem 11
 
-In the 20×20 grid below, four numbers along a diagonal line have been
+In the 20 × 20 grid below, four numbers along a diagonal line have been
 marked in red:
 
 26, 63, 78, 14
@@ -70,7 +70,7 @@ for i in range(16): # vertical calculations
 
 	tmp = 0;
 
-for i in range(16): # diagonal (Left ---> right) calculations
+for i in range(16): # diagonal (left ---> right) calculations
 	for j in range(16):
 		tmp = int(grid[i][j]) * int(grid[i + 1][j + 1]) * \
 		int(grid[i + 2][j + 2]) * int(grid[i + 3][j + 3]);
