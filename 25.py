@@ -35,6 +35,5 @@ while len(str(fibB)) < 1000:
 	fibB = fibA + fibB;
 	fibA = fibTmp;
 	index = index + 1;
-	
-	print(index);
-	print(len(str(fibB)));
+
+print(index);

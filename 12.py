@@ -44,9 +44,6 @@ def findDivs(n):
 	for v in dictDivForm.values():
 		res = res * (v + 1); # total divisors
 
-	print(dictDivForm);
-	print(res);
-
 	return(res);
 
 
@@ -55,11 +52,11 @@ c = 0;
 
 while True:
 	s = s + c;
-	print(s);
 
 	finalRes = findDivs(s);
 
 	if finalRes > 500:
+		print(finalRes);
 		exit();
 
 	c = c + 1;

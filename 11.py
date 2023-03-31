@@ -39,8 +39,8 @@ strGrid = '\
 01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48 \
 ';
 
-lstGrid = strGrid.split();
-grid = np.array(lstGrid).reshape(20, 20);
+lstGrid = strGrid.split(); # converts string into list of strings
+grid = np.array(lstGrid).reshape(20, 20); # converts list into array
 hzProd = 0;
 vcProd = 0;
 aDgProd = 0;
@@ -49,7 +49,7 @@ tmp = 1;
 coordinates = [];
 
 for i in range(20):
-	for j in range(16):
+	for j in range(16): # horizontal calculations
 		tmp = int(grid[i][j]) * int(grid[i][j + 1]) * \
 		int(grid[i][j + 2]) * int(grid[i][j + 3]);
 
@@ -59,10 +59,7 @@ for i in range(20):
 
 	tmp = 0;
 
-print(coordinates);
-print(hzProd);
-
-for i in range(16):
+for i in range(16): # vertical calculations
 	for j in range(20):
 		tmp = int(grid[i][j]) * int(grid[i + 1][j]) * \
 		int(grid[i + 2][j]) * int(grid[i + 3][j]);
@@ -73,10 +70,7 @@ for i in range(16):
 
 	tmp = 0;
 
-print(coordinates);
-print(vcProd);
-
-for i in range(16):
+for i in range(16): # diagonal (Left ---> right) calculations
 	for j in range(16):
 		tmp = int(grid[i][j]) * int(grid[i + 1][j + 1]) * \
 		int(grid[i + 2][j + 2]) * int(grid[i + 3][j + 3]);
@@ -87,10 +81,7 @@ for i in range(16):
 
 	tmp = 0;
 
-print(coordinates);
-print(aDgProd);
-
-for i in range(16):
+for i in range(16): # diagonal (left <--- right) calculations
 	for j in range(16):
 		tmp = int(grid[i][j]) * int(grid[i + 1][j - 1]) * \
 		int(grid[i + 2][j - 2]) * int(grid[i + 3][j - 3]);
@@ -100,8 +91,5 @@ for i in range(16):
 			bDgProd = tmp;
 
 	tmp = 0;
-
-print(coordinates);
-print(bDgProd);
 
 print(max(hzProd, vcProd, aDgProd, bDgProd));

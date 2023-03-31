@@ -24,9 +24,10 @@ f = 19399380; # first number divisible by 20 and all primes below 20
 n = f;
 
 while True:
-	print(n);
 	
 	if isDivisible(n):
+		print(n);
+		
 		exit();
 	else:
 		n = n + f; # multiple of f to be divisible by other divisors

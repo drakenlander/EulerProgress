@@ -26,5 +26,4 @@ def sumDigits(n):
 
 prod = factorial(100);
 
-print(prod);
 print(sumDigits(prod));

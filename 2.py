@@ -23,7 +23,6 @@ while (fibB < 4000000):
 	fibA = fibTmp;
 
 	if fibB % 2 == 0 and fibB < 4000000:
-		print(s);
 		s = s + fibB;
 		
 print(s);

@@ -20,5 +20,4 @@ def sumDigits(n):
 	
 x = 2 ** 1000;
 
-print(x);
 print(sumDigits(x));

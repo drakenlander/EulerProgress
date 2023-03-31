@@ -31,7 +31,6 @@ for i in range(999, 100, -1):
 		prod = i * j;
 		
 		if isPalindrome(prod):
-			print(prod);
 			pos.append(prod);
 			
 print(max(pos));
