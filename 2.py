@@ -14,9 +14,9 @@ not exceed four million, find the sum of the even-valued terms.
 
 '''
 
-s = 2; # first even fibonacci number
 fibA = 1;
 fibB = 2;
+s = 2; # first even fibonacci number
 
 while (fibB < 4000000):
 	fibTmp = fibB;

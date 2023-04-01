@@ -41,6 +41,7 @@ strGrid = '\
 
 lstGrid = strGrid.split(); # converts string into list of strings
 grid = np.array(lstGrid).reshape(20, 20); # converts list into array
+
 hzProd = 0;
 vcProd = 0;
 aDgProd = 0;

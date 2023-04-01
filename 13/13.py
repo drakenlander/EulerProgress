@@ -9,7 +9,6 @@ Work out the first ten digits of the sum of the following one-hundred
 '''
 
 f = open("numbers.txt", "r");
-
 A = [];
 s = 0;
 

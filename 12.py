@@ -32,7 +32,7 @@ from collections import Counter;
 def findDivs(n):
 	factors = []; # store prime factors
 	i = 2; # first possible divisor to check
-	res = 1;
+	divs = 1;
 
 	while i <= n:
 		if n % i == 0:
@@ -44,21 +44,18 @@ def findDivs(n):
 	dictDivForm = {i:factors.count(i) for i in factors}; # exponents
 
 	for v in dictDivForm.values():
-		res = res * (v + 1); # total divisors
+		divs = divs * (v + 1); # total divisors
 
-	return(res);
+	return(divs);
 
 
 s = 0;
 c = 0;
+res = 0;
 
-while True:
+while res < 500:
 	s = s + c;
-
-	finalRes = findDivs(s);
-
-	if finalRes > 500:
-		print(finalRes);
-		exit();
-
+	res = findDivs(s);
 	c = c + 1;
+
+print(res);

@@ -29,6 +29,5 @@ def sieveOfErathostenes(n):
 
 
 n = 2000000;
-res = sieveOfErathostenes(n);
 
-print(res);
+print(sieveOfErathostenes(n));

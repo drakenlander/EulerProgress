@@ -34,6 +34,5 @@ def sieveOfErathostenes(index, bound):
 
 index = 10001;
 bound = int(index * (log(index) + log(log(index))));
-res = sieveOfErathostenes(index, bound);
 
-print(res);
+print(sieveOfErathostenes(index, bound));

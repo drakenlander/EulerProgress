@@ -13,6 +13,7 @@ def isPrime(n):
 	for i in range(2, n): # possible divisors
 		if n % i == 0: # divisible; not prime
 			return False;
+
 	return True;
 
 

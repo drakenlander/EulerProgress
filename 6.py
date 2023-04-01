@@ -30,5 +30,4 @@ for i in range(101):
 
 squareofSum = squareofSum ** 2;
 
-res = squareofSum - sumOfSquares;
-print(res);
+print(squareofSum - sumOfSquares);

@@ -32,7 +32,7 @@ def collatzSequence(n, d):
 	while n != 1:
 		if n < og: # check if previous sequence found
 			d[og] = d[n] + sz; # sz = sz + previous sequence sz
-
+			
 			break;
 
 		if n % 2 == 0:

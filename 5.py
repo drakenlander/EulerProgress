@@ -13,21 +13,18 @@ of the numbers from 1 to 20?
 
 def isDivisible(n):
 	divisors = [18, 16, 14]; # other divisibilities are given
-
+	
 	for i in divisors:
 		if n % i != 0:
 			return False;
+
 	return True;
 
 
 f = 19399380; # first number divisible by 20 and all primes below 20
 n = f;
 
-while True:
-	
-	if isDivisible(n):
-		print(n);
-		
-		exit();
-	else:
-		n = n + f; # multiple of f to be divisible by other divisors
+while isDivisible(n) == False:
+	n = n + f; # multiple of f to be divisible by other divisors
+
+print(n);
