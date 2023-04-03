@@ -17,7 +17,7 @@ def sumDigits(n):
 
 	return(s);
 
-	
+
 x = 2 ** 1000;
 
 print(sumDigits(x));

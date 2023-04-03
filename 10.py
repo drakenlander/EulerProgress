@@ -18,7 +18,7 @@ def sieveOfErathostenes(n):
 		if primes[p] == True: # if element is prime...
 			for i in range(p ** 2, n + 1, p): # access all multiples
 				primes[i] = False; # and remove them
-				
+
 		p = p + 1;
 
 	for i in range(2, len(primes)):

@@ -14,7 +14,7 @@ numbers.
 def isPalindrome(n):
 	t = n;
 	r = 0;
-	
+
 	while t != 0:
 		r = r * 10 + t % 10; # insertion of last digit of t into r
 		t = (t - t % 10) / 10; # removes rightmost digit from t
@@ -33,5 +33,5 @@ for i in range(999, 100, -1):
 
 		if isPalindrome(prod):
 			pos.append(prod);
-			
+
 print(max(pos));

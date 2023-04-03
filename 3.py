@@ -24,7 +24,7 @@ while n != i:
 	if isPrime(i):
 		if n % i == 0:
 			n = n / i; # lower limit
-			
+
 	i = i + 1;
-	
+
 print(i);

@@ -13,7 +13,7 @@ of the numbers from 1 to 20?
 
 def isDivisible(n):
 	divisors = [18, 16, 14]; # other divisibilities are given
-	
+
 	for i in divisors:
 		if n % i != 0:
 			return False;
